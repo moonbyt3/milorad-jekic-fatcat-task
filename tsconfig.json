@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "skipLibCheck": true,
+        "baseUrl" : "./",
+        "paths": {
+            "@homework-task/*": ["src/*"]
+        }
+    },
+    "exclude": ["node_modules", "dist"]
+}
