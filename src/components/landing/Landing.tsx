@@ -1,6 +1,10 @@
 import clsx from 'clsx';
 
+import getUsers from '@homework-task/api/users';
 import { Card } from '@homework-task/components/landing/Card';
+
+import List from '../List';
+import ListItem from '../ListItem';
 
 declare const __CWD__: string;
 
@@ -115,6 +119,14 @@ export const Landing = () => {
                     <Card key={card.title} {...card} />
                 ))}
             </div>
+            <List
+                queryKey={['users']}
+                queryFn={getUsers}
+                ItemComponent={ListItem}
+                loadingMessage="Loading users..."
+                errorMessage="Failed to fetch users."
+                listTitle="User List"
+            />
         </section>
     );
 };

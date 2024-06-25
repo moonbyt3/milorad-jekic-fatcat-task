@@ -4,6 +4,7 @@
         "strict": true,
         "strictNullChecks": true,
         "noImplicitThis": true,
+        "target": "ES5",
         "esModuleInterop": true,
         "jsx": "react-jsx",
         "skipLibCheck": true,
