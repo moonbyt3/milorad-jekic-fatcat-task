@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import getUsers from '@homework-task/api/users';
 import { Card } from '@homework-task/components/landing/Card';
 
+import FormWrapper from '../form-generator/FormWrapper';
 import List from '../List';
 import ListItem from '../ListItem';
 
@@ -127,6 +128,8 @@ export const Landing = () => {
                 errorMessage="Failed to fetch users."
                 listTitle="User List"
             />
+
+            <FormWrapper />
         </section>
     );
 };
