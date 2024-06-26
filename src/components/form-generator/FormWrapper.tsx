@@ -1,8 +1,8 @@
 import { useMutation } from '@tanstack/react-query';
 
-import FormField from './FormField';
-import FormGenerator from './FormGenerator';
-import { validationSchema } from './FormSchema';
+import FormField from '@homework-task/components/form-generator/FormField';
+import FormGenerator from '@homework-task/components/form-generator/FormGenerator';
+import { validationSchema } from '@homework-task/components/form-generator/FormSchema';
 
 type PostType = {
     title: string;

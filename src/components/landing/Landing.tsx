@@ -1,12 +1,11 @@
 import clsx from 'clsx';
 
 import getUsers from '@homework-task/api/users';
+import FormWrapper from '@homework-task/components/form-generator/FormWrapper';
 import { Card } from '@homework-task/components/landing/Card';
-
-import FormWrapper from '../form-generator/FormWrapper';
-import List from '../List';
-import ListItem from '../ListItem';
-import PageGeneratorWrapper from '../page-generator/PageGeneratorWrapper';
+import List from '@homework-task/components/List';
+import ListItem from '@homework-task/components/ListItem';
+import PageGeneratorWrapper from '@homework-task/components/page-generator/PageGeneratorWrapper';
 
 declare const __CWD__: string;
 
