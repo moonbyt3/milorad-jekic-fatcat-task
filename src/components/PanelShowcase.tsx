@@ -23,9 +23,9 @@ export const PanelShowcase: React.FC<PanelShowcaseProps> = ({ items }) => {
                     'items-center'
                 )}
             >
-                {items.map(({ title, description, image }) => (
+                {items.map(({ title, description, image }, i) => (
                     <div
-                        key={title}
+                        key={`panel-item-${i}`}
                         className={clsx(
                             'flex',
                             'flex-col',
